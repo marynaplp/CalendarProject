@@ -1,4 +1,4 @@
-const baseUrl = "https://5e6213046f5c7900149bc94d.mockapi.io/events";
+const baseUrl = "https://5e39354daad22200149624f6.mockapi.io/events";
 export const createEvent = eventData => {
     return fetch(baseUrl, {
         method: "POST",

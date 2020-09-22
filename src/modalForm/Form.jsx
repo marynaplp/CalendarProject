@@ -5,7 +5,6 @@ import { getEndPoint } from "../utilities/utilities.js";
 class Form extends Component {
   state = {
     nameEvent: "",
-    endDateEvent: "",
     endTimeEvent: "",
     timeEvent: "",
     dateEvent: "",
@@ -98,7 +97,6 @@ class Form extends Component {
     const {
       nameEvent,
       descriptionEvent,
-      endDateEvent,
       endTimeEvent,
       timeEvent,
       dateEvent,
