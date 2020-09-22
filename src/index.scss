@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+ ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.root {
+    margin: 0 10px;
+}

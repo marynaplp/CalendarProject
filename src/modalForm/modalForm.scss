@@ -1,0 +1,94 @@
+.create-event {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 40%;
+    top: 25%;
+    height: 400px;
+    width: 500px;
+    background-color: #fff;
+    opacity: 0.9;
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: opacity 200ms ease-in-out;
+    z-index: 100;
+    &__close-btn {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+    }
+    &-form {
+        margin-top: 35px;
+        margin-left: 25px;
+        &__field {
+            width: 450px;
+            font-size: 20px;
+            border: none;
+            border-bottom: 1px solid black;
+            padding-top: 20px
+        }
+        &__submit-btn {
+            display: flex;
+            margin-top: 45px;
+            margin-left: 25px;
+            justify-content: space-between;
+            display: flex;
+            justify-content: center;
+            margin-right: auto;
+            width: 125px;
+            height: 40px;
+            background-color: #029be5;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            margin-left: auto;
+            margin-right: 20px;
+        }
+        &__time {
+            display: flex;
+            margin-top: 65px;
+            margin-right: 25px;
+            justify-content: space-between;
+            border-radius: 8px;
+            .begin {
+                width: 140px;
+                border: none;
+            }
+            select {
+                border: none;
+            }
+        }
+        .description {
+            display: flex;
+            margin-top: 45px;
+            textarea {
+                margin-left: 5px;
+                width: 425px;
+            }
+        }
+    }
+    .delete-event {
+        display: flex;
+        margin-top: -28px;
+        margin-left: 23px;
+        width: 20px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        // display: none;
+    }
+    .delete-event__off {
+        display: none;
+    }
+}
+
+.hidden-popup {
+    display: none;
+}
+
+.show-popup {
+    display: flex;
+}
