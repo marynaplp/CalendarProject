@@ -122,31 +122,27 @@ class Calendar extends Component {
     }
 
     handleSubmit = event => {
-        if (event, this.state.events, this.state.deleteEventData)
-            return;
-        let intersect=(
-            event,
-            this.state.events,
-            this.state.deleteEventData
-        );
-        if (intersect) {
-            this.setState({
-                blink: intersect.startEvent
-            });
-            return;
-        }
-        if (this.state.id) {
-            this.deleteEvent();
-        }
-        createEvent(event).then(() => {
-            fetchEvents().then(events => {
-                this.setState({
-                    events: events,
-                    blink: "",
-                    popupData: ""
-                });
-            });
+      // eslint-disable-next-line 
+      if ((event, this.state.events, this.state.deleteEventData)) return;
+      let intersect = (event, this.state.events, this.state.deleteEventData);
+      if (intersect) {
+        this.setState({
+          blink: intersect.startEvent,
         });
+        return;
+      }
+      if (this.state.id) {
+        this.deleteEvent();
+      }
+      createEvent(event).then(() => {
+        fetchEvents().then((events) => {
+          this.setState({
+            events: events,
+            blink: "",
+            popupData: "",
+          });
+        });
+      });
     };
 
     render() {
